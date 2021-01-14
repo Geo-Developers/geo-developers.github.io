@@ -5,7 +5,15 @@
     <title>GeoDevelopers</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "063353f6-8983-4b0a-94a3-fe1b0d5e99d8",
+        });
+      });
+    </script>
 </head>
 <body>
     <!-- partial:index.partial.html -->
@@ -58,7 +66,15 @@
                 </div>
                 <div class="card text-white bg-primary">
                     <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text">Iniciativas en español para geogeeks. Si te gusta... te agradecemos que le des una ⭐ 😊. <a href="https://github.com/Geo-Developers/geoiniciativas">Ver en Github</a></p>
+                        <p class="card-text text-center">
+                            <strong>GeoIniciativasDB</strong><br>
+                            Recopilatorio de recursos para geoentusiastas: blogs, datasets, APIs, SDKs, ... <br>
+
+                            <span class="btn-bar">
+                                <a href="http://www.geodevelopers.org/geoiniciativas/#/" class="btn btn-outline-warning btn-sm">Web</a>
+                                <a href="https://github.com/Geo-Developers/geoiniciativas" class="btn btn-outline-warning btn-sm">Código</a>
+                            </span>
+                        </p>
                     </div>
                 </div>
             </figure>
@@ -71,9 +87,12 @@
                 </div>
                 <div class="card text-white bg-primary">
                     <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text">
+                        <p class="card-text text-center">
+                            <strong>GeoCowork</strong><br>
                             Un espacio online de networking donde nos coordinamos para descansar.
-                            <a href="https://github.com/Geo-Developers/organization/blob/master/coworking.md">Más información</a>.
+                            <span class="btn-bar">
+                                <a href="https://github.com/Geo-Developers/organization/blob/master/coworking.md" class="btn btn-outline-warning btn-sm">Info</a>
+                            </span>
                         </p>
                     </div>
                 </div>
@@ -87,9 +106,13 @@
                 </div>
                 <div class="card text-white bg-primary">
                     <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text ">
+                        <p class="card-text text-center">
+                            <strong>Youtube Video Tour</strong><br>
                             Proyecto colaborativo de Geo Developers creado para presentar en el concurso de Storymaps de Esri UC 2014.
-                            <a href="https://github.com/Geo-Developers/youtube-video-tour">Ver en Github</a>
+                            <span class="btn-bar">
+                                <a href="http://www.geodevelopers.org/youtube-video-tour/index.html?appid=dfd3d90e66ed4aa9812cdf8729bf1404" class="btn btn-outline-warning btn-sm">Demo</a>
+                                <a href="https://github.com/Geo-Developers/youtube-video-tour" class="btn btn-outline-warning btn-sm">Código</a>
+                            </span>
                         </p>
                     </div>
                 </div>
@@ -103,7 +126,7 @@
                 </div>
                 <div class="card text-white bg-primary">
                     <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text">Giraffe description.</p>
+                        <p class="card-text text-center">Giraffe description.</p>
                     </div>
                 </div>
             </figure>
@@ -116,7 +139,7 @@
                 </div>
                 <div class="card text-white bg-primary">
                     <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text">
+                        <p class="card-text text-center">
                             Un proyecto para unificar toda la geoactualidad es un sólo RSS/Newsletter/Web.
                             <a href="https://github.com/Geo-Developers/agregador-de-geoblogs">
                                 Vero en Github
@@ -134,7 +157,7 @@
                 </div>
                 <div class="card text-white bg-primary">
                     <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text">Dog description.</p>
+                        <p class="card-text text-center">Dog description.</p>
                     </div>
                 </div>
             </figure>
