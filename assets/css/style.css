@@ -38,7 +38,7 @@ h1 img{
     text-align: center;
 }
 #iniciativa-geoiniciativadb{
-    background-image: url(https://images.unsplash.com/photo-1584291527935-456e8e2dd734?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1825&q=80);
+    background-image: url(https://images.unsplash.com/photo-1590233033212-95081b4e52fb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
 }
 
 #iniciativa-geocowork{
@@ -74,8 +74,17 @@ h1 img{
     border: 0;
 }
 
+.card-body strong{
+
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color:gold
+}
+.btn-bar a{
+    margin: 10px 5px;
+}
 .bg-primary a{
-    color:gold;
+    /* color:gold; */
 }
 
 .card-img,
