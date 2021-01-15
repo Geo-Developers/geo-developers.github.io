@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>GeoDevelopers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
     <script>
-      window.OneSignal = window.OneSignal || [];
-      OneSignal.push(function() {
-        OneSignal.init({
-          appId: "063353f6-8983-4b0a-94a3-fe1b0d5e99d8",
+        window.OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+            OneSignal.init({
+                appId: "063353f6-8983-4b0a-94a3-fe1b0d5e99d8",
+            });
         });
-      });
     </script>
 </head>
 <body>
     <!-- partial:index.partial.html -->
     <div class="container-fluid">
+        <p class="text-right color-black">
+            <a href="https://geodevelopers.us11.list-manage.com/subscribe?u=02831ef74a5e28f16ea6f19c5&id=419c60e17a" style="margin-right:10px"><i class="fas fa-envelope-open-text"></i> Novedades</a>
+            <a href="https://github.com/Geo-Developers/geo-developers.github.io" class="link link--dark"><i class="fa fa-edit"></i> Editar</a>
+        </p>
         <h1 class="text-center"><img src="assets/images/geodev_nuevo.svg" alt="GeoDevelopers"></h1>
 
         <ul id="social-bar">
@@ -53,116 +62,144 @@
             </li>
 
         </ul>
-        <p class="text-center">Iniciativas puestas en marcha o en las que contribuimos</p>
-        <div class="-card-deck card-columns">
+        <p class="text-center color-black">Iniciativas y proyectos puestos en marcha o en las que contribuimos</p>
+        <ul id="initiatives">
             <!-- Wrap two standard cards -->
-            <figure class="card card-flip">
-                <div class="card text-white">
-                    <div class="card-img img-fluid" id="iniciativa-geoiniciativadb"></div>
+            <li>
+                <figure class="card card-flip">
+                    <div class="card text-white">
+                        <div class="card-img img-fluid" id="iniciativa-geocowork"></div>
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h4 class="card-title display-1">GeoCowork</h4>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-primary">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <p class="card-text text-center">
+                                <strong>GeoCowork</strong><br>
+                                Un espacio online de networking donde nos coordinamos diariamente para descansar recreando "el momento del café" y hablar de cualquier cosa.<br>
+                                <span class="btn-bar">
+                                    <a href="https://www.youtube.com/watch?v=BFWHiKhWpgQ" class="btn btn-outline-warning btn-sm">Video</a>
+                                    <a href="https://github.com/Geo-Developers/organization/blob/master/coworking.md#preguntas-frecuentes-acerca-del-coworking" class="btn btn-outline-warning btn-sm">FAQ</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </figure>
+            </li>
+            <li>
+                <figure class="card card-flip">
+                    <div class="card text-white">
+                        <div class="card-img img-fluid" id="iniciativa-geoiniciativadb"></div>
 
-                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                        <h4 class="card-title display-1">GeoIniciativasDB</h4>
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h4 class="card-title display-1">GeoIniciativasDB</h4>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-white bg-primary">
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text text-center">
-                            <strong>GeoIniciativasDB</strong><br>
-                            Recopilatorio de recursos para geoentusiastas: blogs, datasets, APIs, SDKs, ... <br>
+                    <div class="card text-white bg-primary">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <p class="card-text text-center">
+                                <strong>GeoIniciativasDB</strong><br>
+                                Proyecto colaborativo para recopilar recursos sobre blogs, datasets, APIs, SDKs, ... para geoentusiastas.<br>
 
-                            <span class="btn-bar">
-                                <a href="http://www.geodevelopers.org/geoiniciativas/#/" class="btn btn-outline-warning btn-sm">Web</a>
-                                <a href="https://github.com/Geo-Developers/geoiniciativas" class="btn btn-outline-warning btn-sm">Código</a>
-                            </span>
-                        </p>
+                                <span class="btn-bar">
+                                    <a href="http://www.geodevelopers.org/geoiniciativas/#/" class="btn btn-outline-warning btn-sm">Web</a>
+                                    <a href="https://docs.google.com/spreadsheets/d/1bF4YYH7bXPSLI___zMfh3tDfSxDlWWZLkkuT5vD4zHQ/edit#gid=0" class="btn btn-outline-warning btn-sm">Spreadsheet</a>
+                                </span>
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </figure>
-            <figure class="card card-flip">
-                <div class="card text-white">
-                    <div class="card-img img-fluid" id="iniciativa-geocowork"></div>
-                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                        <h4 class="card-title display-1">GeoCowork</h4>
+                </figure>
+            </li>
+            <li>
+                <figure class="card card-flip">
+                    <div class="card text-white bg-primary">
+                        <div class="card-img img-fluid" id="iniciativa-youtube-videotour"></div>
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h4 class="card-title display-1">Youtube Video Tour</h4>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-white bg-primary">
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text text-center">
-                            <strong>GeoCowork</strong><br>
-                            Un espacio online de networking donde nos coordinamos para descansar.
-                            <span class="btn-bar">
-                                <a href="https://github.com/Geo-Developers/organization/blob/master/coworking.md" class="btn btn-outline-warning btn-sm">Info</a>
-                            </span>
-                        </p>
+                    <div class="card text-white bg-primary">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <p class="card-text text-center">
+                                <strong>Youtube Video Tour</strong><br>
+                                Aplicación web desarrollada que permite mostrar y animar una ruta (GPX) en un mapa y sincronizarla con un video de Youtube.<br>
+                                <span class="btn-bar">
+                                    <a href="http://www.geodevelopers.org/youtube-video-tour/index.html?appid=dfd3d90e66ed4aa9812cdf8729bf1404" class="btn btn-outline-warning btn-sm">Demo</a>
+                                    <a href="https://github.com/Geo-Developers/youtube-video-tour" class="btn btn-outline-warning btn-sm">Código</a>
+                                </span>
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </figure>
-            <figure class="card card-flip">
-                <div class="card text-white bg-primary">
-                    <div class="card-img img-fluid" id="iniciativa-youtube-videotour"></div>
-                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                        <h4 class="card-title display-1">Youtube Video Tour</h4>
+                </figure>
+            </li>
+            <li>
+                <figure class="card card-flip">
+                    <div class="card text-white">
+                        <div class="card-img img-fluid" id="iniciativa-virtual-conferences"></div>
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h4 class="card-title display-1">Charlas online</h4>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-white bg-primary">
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text text-center">
-                            <strong>Youtube Video Tour</strong><br>
-                            Proyecto colaborativo de Geo Developers creado para presentar en el concurso de Storymaps de Esri UC 2014.
-                            <span class="btn-bar">
-                                <a href="http://www.geodevelopers.org/youtube-video-tour/index.html?appid=dfd3d90e66ed4aa9812cdf8729bf1404" class="btn btn-outline-warning btn-sm">Demo</a>
-                                <a href="https://github.com/Geo-Developers/youtube-video-tour" class="btn btn-outline-warning btn-sm">Código</a>
-                            </span>
-                        </p>
+                    <div class="card text-white bg-primary">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <p class="card-text text-center">
+                                <strong>Charlas online</strong><br>
+                                Uno de los objetivos de la comunidad es compartir conocimientos<br>
+                                <span class="btn-bar">
+                                    <a href="https://www.youtube.com/geo-developers" class="btn btn-outline-warning btn-sm">Grabaciones</a>
+                                    <a href="https://www.meetup.com/es-ES/geodevelopers/events/" class="btn btn-outline-warning btn-sm">Próximos eventos</a>
+                                </span>
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </figure>
-            <figure class="card card-flip">
-                <div class="card text-white">
-                    <div class="card-img img-fluid" id="iniciativa-virtual-conferences"></div>
-                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                        <h4 class="card-title display-1">Charlas online</h4>
+                </figure>
+            </li>
+            <li>
+                <figure class="card card-flip">
+                    <div class="card text-white">
+                        <div class="card-img img-fluid" id="iniciativa-rss-aggregator"></div>
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h4 class="card-title display-1">Agregador de blogs</h4>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-white bg-primary">
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text text-center">Giraffe description.</p>
+                    <div class="card text-white bg-primary">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <p class="card-text text-center">
+                                <strong>Agregador de blogs</strong><br>
+                                Un proyecto para unificar toda la geoactualidad es un sólo RSS / Newsletter / Web.<br>
+                                <span class="btn-bar">
+                                    <a href="https://www.geodevelopers.org/agregador-de-geoblogs/#/" class="btn btn-outline-warning btn-sm">Web</a>
+                                    <a href="https://github.com/Geo-Developers/agregador-de-geoblogs" class="btn btn-outline-warning btn-sm">Código</a>
+                                </span>
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </figure>
-            <figure class="card card-flip">
-                <div class="card text-white">
-                    <div class="card-img img-fluid" id="iniciativa-rss-aggregator"></div>
-                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                        <h4 class="card-title display-1">Agregador de blogs</h4>
+                </figure>
+            </li>
+            <li>
+                <figure class="card card-flip">
+                    <div class="card text-white">
+                        <div class="card-img img-fluid" id="iniciativa-mailing-list"></div>
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h4 class="card-title display-1">Lista de correo</h4>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-white bg-primary">
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text text-center">
-                            Un proyecto para unificar toda la geoactualidad es un sólo RSS/Newsletter/Web.
-                            <a href="https://github.com/Geo-Developers/agregador-de-geoblogs">
-                                Vero en Github
-                            </a>
-                        </p>
+                    <div class="card text-white bg-primary">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <p class="card-text text-center">
+                            <strong>Lista de correo</strong><br>
+                                El objetivo de la lista de correo (Geo-Developers-list@meetup.com) es que cualquiera pueda pedir opinión o ayuda al resto, iniciar debates, etc..<br>
+                                <span class="btn-bar">
+                                    <a href="https://www.meetup.com/es-ES/geodevelopers/messages/archive/" class="btn btn-outline-warning btn-sm">Ver mensajes</a>
+                                </span>
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </figure>
-            <figure class="card card-flip">
-                <div class="card text-white">
-                    <div class="card-img img-fluid" id="iniciativa-mailing-list"></div>
-                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                        <h4 class="card-title display-1">Lista de correo</h4>
-                    </div>
-                </div>
-                <div class="card text-white bg-primary">
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <p class="card-text text-center">Dog description.</p>
-                    </div>
-                </div>
-            </figure>
+                </figure>
+            </li>
         </div>
-    </div>
+    </ul>
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js'></script>

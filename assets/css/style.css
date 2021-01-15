@@ -3,15 +3,15 @@ For demo purpose
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto|Fira+Mono");
 body {
-  margin-top: 15px;
-  margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
-  font-family: "Roboto", sans-serif;
-  perspective: 1000;
+    font-family: "Roboto", sans-serif;
+    perspective: 1000;
 }
 
 h1, h2, h3, h4 {
-  font-family: "Roboto", cursive;
+    font-family: "Roboto", cursive;
 }
 h1 img{
     max-width: 300px;
@@ -23,9 +23,16 @@ h1 img{
     flex-flow: row wrap;
     justify-content: center;
     list-style: none;
+    padding: 0;
 }
-#social-bar li{
-
+.card-img-overlay{
+    padding: 1.25rem 0
+}
+.card-title{
+    background-color: #00000073;
+    width: 100%;
+    text-align: center;
+    padding: .75rem 1.25rem;
 }
 #social-bar img{
     max-width: 24px;
@@ -37,6 +44,49 @@ h1 img{
 .text-center{
     text-align: center;
 }
+.text-right{
+    text-align: right;
+}
+.color-black,
+.color-black a{
+    color: #544c4c;
+    font-family: "Fira Mono";
+    font-size: .8rem
+
+}
+
+#initiatives{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+/* #initiatives figure,
+#initiatives figure > div {
+    max-height: 300px
+} */
+.card-text{
+    font-size: .9rem
+}
+
+#initiatives li {
+    list-style: none;
+    flex: 0 0 33.333333%;
+    padding: 1%;
+}
+
+@media screen and (max-width: 768px) {
+    #initiatives li {
+        flex: 0 0 50%;
+    }
+}
+@media screen and (max-width: 521px) {
+    #initiatives li {
+        flex: 0 0 100%;
+    }
+}
+
+
 #iniciativa-geoiniciativadb{
     background-image: url(https://images.unsplash.com/photo-1590233033212-95081b4e52fb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
 }
@@ -64,8 +114,8 @@ h1 img{
     background-image: url();
 }
 .card-title {
-  max-width: 100%;
-  font-size: 2vw;
+    max-width: 100%;
+    font-size: 1.2rem;
 }
 .bg-dark{
     background-color: none;
@@ -90,9 +140,9 @@ h1 img{
 .card-img,
 .card-img-top,
 .card-img-bottom {
-  min-width: 100%;
-  height: 38vh;
-  min-height: 38vh;
+    min-width: 100%;
+    height: 24vh;
+    min-height: 24vh;
 }
 .card-img{
     background-position: center;
@@ -100,38 +150,38 @@ h1 img{
 }
 
 .text-white .card-img {
-  filter: brightness(55%) saturate(100%);
+    filter: brightness(55%) saturate(100%);
 }
 
 /*
 Flip card
 */
 .card-flip {
-  background: none;
-  border: none;
-  padding: 0;
+    background: none;
+    border: none;
+    padding: 0;
 }
 .card-flip .card {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  transition: transform 300ms;
-  transition-timing-function: linear;
-  width: 100%;
-  height: 100%;
-  margin: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 .card-flip .card:first-of-type {
-  tranform: rotateY(0deg);
+    tranform: rotateY(0deg);
 }
 .card-flip .card:last-of-type {
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 0;
-  display: flex;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    display: flex;
 }
 .card-flip:hover .card:first-of-type {
-  transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
 }
 .card-flip:hover .card:last-of-type {
-  transform: rotateY(0deg);
+    transform: rotateY(0deg);
 }
